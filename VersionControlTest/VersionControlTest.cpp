@@ -15,9 +15,7 @@ int main()
 {
 	int number;
 	string name;
-	cout << "Enter a number: ";
 	cin >> number;
-	cout << "Enter your name: ";
 	getline(cin,name);
 	UserDetails user = UserDetails(name, number);
 	cout << "Hello " + user.GetName() << endl;
