@@ -14,16 +14,16 @@ int main()
 {
 	int number;
 	string name;
+	cout << "Enter your name: ";
+	getline(cin, name);
 	cout << "Enter a number: ";
 	cin >> number;
-	cout << "Enter your name: ";
 	if(cin.fail() == true){
 		cout << "\nERROR bad input\n";
 		cin.clear();
 		cin.ignore();
 		number = 1;
 	}
-	cin >> name;
 	UserDetails user = UserDetails(name, number);
 	cout << "Hello " + user.GetName() << endl;
 	cout << user.GetNumber() << " divided by " << DIVIDER << " is " << user.GetNumber() / DIVIDER << endl;
