@@ -16,6 +16,12 @@ int main()
 	string name;
 	cout << "Enter a number and name: ";
 	cin >> number;
+	if(cin.fail() == true){
+		cout << "\nERROR bad input\n";
+		cin.clear();
+		cin.ignore();
+		number = 1;
+	}
 	getline(cin,name);
 	UserDetails user = UserDetails(name, number);
 	cout << "\nHello " << user.GetName() << endl;
