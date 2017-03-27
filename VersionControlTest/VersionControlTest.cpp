@@ -3,15 +3,16 @@
 
 #include "stdafx.h"
 #include <iostream>
+using namespace std;
 
 const int MULTIPLIER = 5;
 
 int main()
 {
 	int number;
-	std::cin >> number;
-	std::cout << number * MULTIPLIER << std::endl;
-	std::cout << "New changes here\n";
+	cin >> number;
+	cout << number * MULTIPLIER << endl;
+	cout << "New changes here\n";
 	system("pause");
     return 0;
 }
