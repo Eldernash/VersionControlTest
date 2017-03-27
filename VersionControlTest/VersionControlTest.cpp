@@ -7,6 +7,7 @@ using namespace std;
 
 const float DIVIDER = 4.5f;
 
+
 int main()
 {
 	int number;
