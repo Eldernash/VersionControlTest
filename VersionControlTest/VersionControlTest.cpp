@@ -16,9 +16,10 @@ int main()
 	int number;
 	string name;
 	cin >> number;
+	cin.ignore();
 	getline(cin,name);
 	UserDetails user = UserDetails(name, number);
-	cout << "Hello " + user.GetName() << endl;
+	cout << "Hello " + user.GetName()<< endl;
 	cout << user.GetNumber() / DIVIDER << endl;
 	cout << "New changes here\n";
 	system("pause");
