@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 
-const int MULTIPLIER = 5;
+const int MULTIPLIER = 3;
 
 int main()
 {
