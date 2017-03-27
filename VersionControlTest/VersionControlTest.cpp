@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include "UserDetails.h"
+#include <windows.h>
 
 using namespace std;
 
@@ -18,7 +19,7 @@ int main()
 	getline(cin, name);
 	cout << "Enter a number: ";
 	cin >> number;
-	if(cin.fail() == true){
+	if (cin.fail() == true) {
 		cout << "\nERROR bad input\n";
 		cin.clear();
 		cin.ignore();
@@ -39,6 +40,17 @@ int main()
 	cout << "    000000000   \n";
 	cout << "     0 0 0 0    \n";
 	cout << "     0 0 0 0    \n";
+
+	string colorchoice;
+	cout << "\n\nDo you like red, white, or blue? ";
+	cin >> colorchoice;
+	if (colorchoice == "red") {
+		system("color 4");
+	}
+	else if (colorchoice == "blue") {
+		system("color 1");
+	}
+		cout << "How's this then?" << endl;
 	system("pause");
     return 0;
 }
