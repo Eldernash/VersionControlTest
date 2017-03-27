@@ -5,15 +5,14 @@
 #include <iostream>
 using namespace std;
 
-const int MULTIPLIER = 3;
+const float DIVIDER = 4.5f;
 
 int main()
 {
 	int number;
 	cin >> number;
-	cout << number * MULTIPLIER << endl;
+	cout << number / DIVIDER << endl;
 	cout << "New changes here\n";
 	system("pause");
     return 0;
 }
-
