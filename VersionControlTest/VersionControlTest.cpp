@@ -44,6 +44,9 @@ int main()
 	string colorchoice;
 	cout << "\n\nDo you like red, white, or blue? ";
 	cin >> colorchoice;
+	for (size_t i = 0; i < colorchoice.size(); ++i) {
+		colorchoice[i] = tolower(colorchoice[i]);
+	}
 	if (colorchoice == "red") {
 		system("color 4");
 	}
