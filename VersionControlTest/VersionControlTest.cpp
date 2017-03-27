@@ -14,7 +14,7 @@ int main()
 {
 	int number;
 	string name;
-	cout << "Enter a number and name: ";
+	cout << "Enter a number: ";
 	cin >> number;
 	if(cin.fail() == true){
 		cout << "\nERROR bad input\n";
@@ -22,10 +22,12 @@ int main()
 		cin.ignore();
 		number = 1;
 	}
-	getline(cin,name);
+	cout << "Enter your name; ";
+	cin >> name;
 	UserDetails user = UserDetails(name, number);
-	cout << "\nHello " << user.GetName() << endl;
-	cout << user.GetNumber() / DIVIDER << endl;
+	cout << "Hello " + user.GetName() << endl;
+	cout << user.GetNumber() << " divided by " << DIVIDER << " is " << user.GetNumber() / DIVIDER << endl;
+	cout << "New changes here\n";
 	system("pause");
     return 0;
 }
