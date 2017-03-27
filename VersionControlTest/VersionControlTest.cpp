@@ -9,6 +9,7 @@ int main()
 	int number;
 	std::cin >> number;
 	std::cout << number * 5 << std::endl;
+	std::cout << "New changes here\n";
 	system("pause");
     return 0;
 }
