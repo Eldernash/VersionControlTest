@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-const int MULTIPLIER = 3;
+const int MULTIPLIER = 300;
 
 int main()
 {
