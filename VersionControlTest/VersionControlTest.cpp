@@ -10,17 +10,16 @@ using namespace std;
 
 const float DIVIDER = 4.5f;
 
-
 int main()
 {
 	int number;
 	string name;
+	cout << "Enter a number and name: ";
 	cin >> number;
 	getline(cin,name);
 	UserDetails user = UserDetails(name, number);
-	cout << "Hello " + user.GetName() << endl;
+	cout << "\nHello " << user.GetName() << endl;
 	cout << user.GetNumber() / DIVIDER << endl;
-	cout << "New changes here\n";
 	system("pause");
     return 0;
 }
