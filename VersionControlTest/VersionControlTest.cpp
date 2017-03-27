@@ -15,11 +15,13 @@ int main()
 {
 	int number;
 	string name;
+	cout << "Enter a number: ";
 	cin >> number;
-	getline(cin,name);
+	cout << "Enter your name; ";
+	cin >> name;
 	UserDetails user = UserDetails(name, number);
 	cout << "Hello " + user.GetName() << endl;
-	cout << user.GetNumber() / DIVIDER << endl;
+	cout << user.GetNumber() << " divided by " << DIVIDER << " is " << user.GetNumber() / DIVIDER << endl;
 	cout << "New changes here\n";
 	system("pause");
     return 0;
